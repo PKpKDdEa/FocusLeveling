@@ -1,7 +1,7 @@
 # Focus Leveling: Study & Conquer
 
 ## Project Overview
-This is a proposal and development repository for "Focus Leveling: Study & Conquer," an RPG-style time logging app designed for students. The app encourages post-task logging to help users reflect on their actual accomplishments, reducing stress and boosting motivation.
+This is an open-sourced project from HKU CS team for "Focus Leveling: Study & Conquer," an RPG-style time logging app designed for students. The app encourages post-task logging to help users reflect on their actual accomplishments, reducing stress and boosting motivation.
 
 ## Team Members
 - Bosco
@@ -24,12 +24,6 @@ This is a proposal and development repository for "Focus Leveling: Study & Conqu
 - **UI/UX Design**: Figma
 - **Version Control**: GitHub
 - **Optional Tools**: Python/R for dashboard visualizations
-
-## Development Timeline
-- **Planning and Information Gathering**: 1 week (All)
-- **User Interface Design and Development**: 2 weeks (Fok)
-- **Core Functionality**: 4 weeks (Leung & Ng)
-- **Refinement and Deployment**: 2 weeks (All)
 
 ## Getting Started
 1. Clone the repository: `git clone https://github.com/yourusername/FocusLeveling.git`
