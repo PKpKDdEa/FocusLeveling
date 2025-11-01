@@ -1,53 +1,98 @@
-# Team Kickoff Checklist
+# Team Kickoff Checklist - 4-Week Timeline
 
-This checklist will help your team get started with MVP development for the Android To-Do List App.
+This checklist will help your team get started with MVP development for the Android To-Do List App using the **revised 4-week timeline** (3 weeks development + 1 week finalization).
+
+---
+
+## 🚨 Key Changes from Original Plan
+
+### Timeline Compression
+- **Original Plan:** 8 weeks (4 sprints of 2 weeks)
+- **Revised Plan:** 4 weeks (3 weeks development + 1 week finalization)
+- **Impact:** Focus ruthlessly on core features only
+
+### What We're Building (MVP Core)
+✅ Add, view, edit, complete, delete tasks  
+✅ Local persistence with Room database  
+✅ Clean Material Design UI  
+✅ Stable, demo-ready application
+
+### What We're Deferring (Post-MVP)
+❌ Advanced features (search, notifications, settings)  
+❌ Automated testing (manual testing only)  
+❌ Performance optimization  
+❌ Dependency injection framework  
+❌ Detailed documentation
+
+### Success = Working Demo in 3 Weeks + Polished Presentation in Week 4
 
 ---
 
 ## 📋 Pre-Kickoff (Before First Meeting)
 
 ### Team Lead / Project Manager
-- [ ] Review all documentation files
+- [ ] Review all documentation files (especially **PROJECT_PLAN.md**)
 - [ ] Set up GitHub repository access for all team members
 - [ ] Create team communication channels (Slack/Discord)
 - [ ] Schedule kickoff meeting
 - [ ] Prepare meeting agenda
 - [ ] Create GitHub Projects board
 - [ ] Set up labels in GitHub
+- [ ] **IMPORTANT:** Communicate the 4-week timeline to all team members
 
 ### All Team Members
-- [ ] Read [QUICK_START.md](./QUICK_START.md)
-- [ ] Read [ISSUES_SUMMARY.md](./ISSUES_SUMMARY.md)
-- [ ] Browse [MVP_TODO_APP_ISSUES.md](./MVP_TODO_APP_ISSUES.md) for your role
+- [ ] Read **[PROJECT_PLAN.md](./PROJECT_PLAN.md)** - The revised 4-week plan
+- [ ] Read **[QUICK_REFERENCE.md](./QUICK_REFERENCE.md)** - One-page summary
+- [ ] Skim [WEEK_BY_WEEK_SCHEDULE.md](./WEEK_BY_WEEK_SCHEDULE.md) for your role
+- [ ] Browse [MVP_TODO_APP_ISSUES.md](./MVP_TODO_APP_ISSUES.md) for detailed specs (reference only)
 - [ ] Join team communication channels
 - [ ] Ensure you have GitHub account
+- [ ] **Understand:** We have only 4 weeks, focus is critical!
 
 ---
 
-## 🚀 Kickoff Meeting Agenda (2 hours)
+## 🚀 Kickoff Meeting Agenda (1.5 hours)
 
-### Part 1: Introductions (15 min)
+### Part 1: Introductions (10 min)
 - [ ] Team member introductions
 - [ ] Share experience and strengths
 - [ ] Discuss working preferences
 - [ ] Set communication expectations
 
-### Part 2: Project Overview (30 min)
+### Part 2: Project Overview (20 min)
 - [ ] Review MVP goals and scope
-- [ ] Walk through documentation structure
-- [ ] Review timeline (8 weeks, 4 sprints)
-- [ ] Discuss success criteria
+- [ ] **CRITICAL:** Explain 4-week timeline (3 weeks dev + 1 week finalization)
+- [ ] Walk through PROJECT_PLAN.md structure
+- [ ] Discuss what we're building vs. what we're cutting
+- [ ] Emphasize: Focus, speed, and teamwork
 - [ ] Q&A session
 
-### Part 3: Technical Setup (30 min)
+### Part 3: Technical Setup (20 min)
 - [ ] Review required tools and software
 - [ ] Discuss development environment setup
 - [ ] Share best practices and coding standards
 - [ ] Review Git workflow (branches, PRs, reviews)
-- [ ] Discuss testing requirements
+- [ ] **Testing:** Manual testing prioritized, automated tests deferred
 
-### Part 4: Sprint 1 Planning (30 min)
-- [ ] Review Sprint 1 goals
+### Part 4: Week 1 Planning (20 min)
+- [ ] Review Week 1 goals and daily tasks
+- [ ] Assign first issues to team members:
+  - UI/UX: #1 (Wireframes), #2 (Color System)
+  - Backend: #8 (Schema), #9 (Room), #11 (Models)
+  - Integration: #16 (Architecture)
+- [ ] Identify potential blockers
+- [ ] Agree on daily standup time (recommend 9:00 AM)
+- [ ] Set Week 1 demo for Friday 4:00 PM
+
+### Part 5: Logistics & Expectations (20 min)
+- [ ] Schedule recurring meetings
+  - Daily standup: 9:00 AM (15 min)
+  - Weekly review: Friday 4:00 PM (1 hour)
+- [ ] Establish escalation process (ask for help if blocked > 1 hour)
+- [ ] Define "definition of done" for tasks
+- [ ] **Timeline management:** What happens if we fall behind?
+- [ ] Discuss work hours and availability
+- [ ] **Presentation:** Final week focused on polish and demo prep
 - [ ] Assign first issues to team members
 - [ ] Identify potential blockers
 - [ ] Set Sprint 1 demo date
@@ -64,54 +109,51 @@ This checklist will help your team get started with MVP development for the Andr
 
 ## 🎯 Week 1 Action Items
 
-### Day 1 (Kickoff Day)
+### Day 1 (Kickoff Day - Monday)
 **Everyone:**
 - [ ] Attend kickoff meeting
 - [ ] Set up development environment
 - [ ] Clone repository
-- [ ] Test that you can run the app (or will be able to once architecture is set up)
+- [ ] Understand your Week 1 responsibilities
 
-### Day 2-3 (Setup & Planning)
+### Day 1-2 (Setup & Start)
 **UI/UX Designer:**
 - [ ] Set up Figma workspace
-- [ ] Research 3-5 competitor to-do apps
-- [ ] Create mood board
-- [ ] Start wireframe sketches
-- [ ] Share early concepts with team
+- [ ] Research 2-3 competitor to-do apps (keep it quick!)
+- [ ] Start wireframe sketches (simplified, low-fidelity)
+- [ ] Focus on 2 screens: task list + add/edit
 
 **Backend Developer:**
 - [ ] Install Android Studio
 - [ ] Set up Android emulator or connect device
-- [ ] Study Room Database documentation
-- [ ] Draft database schema on paper/whiteboard
-- [ ] Discuss schema with integration engineer
+- [ ] Draft database schema on paper
+- [ ] Start creating Task entity class
+- [ ] Keep schema simple: id, title, description, date, priority, status
 
 **Integration Engineer:**
 - [ ] Install Android Studio
-- [ ] Review MVVM architecture articles
-- [ ] Create package structure proposal
-- [ ] Review with backend developer
-- [ ] Set up testing frameworks
+- [ ] Review MVVM architecture articles (briefly)
+- [ ] Create package structure (data, domain, ui)
+- [ ] Set up main Activity and basic navigation
 
-### Day 4-5 (First Deliverables)
+### Day 3-5 (First Deliverables)
 **UI/UX Designer:**
-- [ ] Complete Issue #1 (Wireframes) - at least draft version
-- [ ] Share for team feedback
-- [ ] Iterate based on feedback
-- [ ] Start Issue #2 (Color scheme) research
+- [ ] Complete wireframes (Day 3)
+- [ ] Define color scheme using Material Design (Day 3-4)
+- [ ] Start task list item component design (Day 4-5)
+- [ ] Share designs with team continuously
 
 **Backend Developer:**
-- [ ] Complete Issue #8 (Database Schema) - at least draft
-- [ ] Create schema diagram
-- [ ] Share with team for review
-- [ ] Start Issue #11 (Data Models) implementation
+- [ ] Complete Task entity and enums (Day 3)
+- [ ] Set up Room database (Day 3-4)
+- [ ] Create DAO interfaces (Day 4)
+- [ ] Start repository implementation (Day 5)
 
 **Integration Engineer:**
-- [ ] Complete Issue #16 (Architecture Setup)
-- [ ] Create package structure
-- [ ] Document architecture decisions
-- [ ] Set up base classes
-- [ ] Share documentation with team
+- [ ] Complete MVVM package structure (Day 3)
+- [ ] Create main task list screen (Day 4)
+- [ ] Set up RecyclerView and adapter (Day 4-5)
+- [ ] Create ViewModels (Day 5)
 
 ---
 
@@ -227,60 +269,85 @@ This checklist will help your team get started with MVP development for the Andr
 
 ## ✅ Definition of Done
 
-### For Issues
-An issue is considered "Done" when:
-- [ ] All acceptance criteria are met
-- [ ] Code is written and tested
-- [ ] Unit tests written (if applicable)
-- [ ] Code reviewed and approved
-- [ ] Documentation updated
-- [ ] Changes merged to main branch
-- [ ] Deployed to staging (if applicable)
-- [ ] Demo-ready
-
-### For Sprint
-A sprint is considered "Done" when:
-- [ ] All planned issues completed
-- [ ] Sprint demo presented
-- [ ] Retrospective completed
-- [ ] Next sprint planned
-- [ ] All PRs merged
+### For Tasks (During Development)
+A task is considered "Done" when:
+- [ ] Feature is implemented and working
+- [ ] Manually tested on device/emulator
 - [ ] No critical bugs
+- [ ] Code committed to branch
+- [ ] Peer reviewed (quick review, not formal)
+- [ ] Merged to main
 
-### For MVP
+### For Week Milestones
+A week is considered successful when:
+- [ ] All planned features completed (or scope adjusted)
+- [ ] Demo-able progress shown
+- [ ] Next week tasks identified
+- [ ] No critical blockers remaining
+- [ ] Team morale is good
+
+### For MVP (End of Week 3)
 The MVP is considered "Done" when:
-- [ ] All high-priority issues completed
-- [ ] Can add, view, edit, delete tasks
-- [ ] UI matches approved designs
-- [ ] All tests passing (80%+ coverage)
-- [ ] No critical bugs
-- [ ] Performance acceptable
-- [ ] Ready for beta testing
+- [ ] All high-priority features completed (add, view, edit, complete, delete)
+- [ ] UI matches approved designs (simplified)
+- [ ] App is stable and doesn't crash
+- [ ] Data persists correctly
+- [ ] Ready for Week 4 finalization
+- [ ] Bug list documented
+
+### For Presentation (End of Week 4)
+Presentation-ready when:
+- [ ] Critical bugs fixed
+- [ ] App is polished
+- [ ] Demo tested and working
+- [ ] Presentation slides complete
+- [ ] Each team member knows their part
+- [ ] Backup demo materials ready
 
 ---
 
 ## 🎯 Success Metrics
 
-### Week 1 Goals
-- [ ] All team members productive
-- [ ] Dev environments working
-- [ ] At least 3 issues completed
-- [ ] Team communication flowing
+### Week 1 Goals (Critical!)
+- [ ] Simplified wireframes completed
+- [ ] Color system defined
+- [ ] Database schema finalized
+- [ ] Room database working
+- [ ] MVVM structure in place
+- [ ] Basic UI screens created
 - [ ] No major blockers
 
-### Sprint 1 Goals (Week 1-2)
-- [ ] Wireframes completed and approved
-- [ ] Database schema designed
-- [ ] Project architecture set up
-- [ ] Team working well together
-- [ ] Ready for Sprint 2
+### Week 2 Goals (Must Have!)
+- [ ] Add task functionality working
+- [ ] View task list working
+- [ ] Edit task working
+- [ ] All CRUD operations functional
+- [ ] Data persists correctly
 
-### MVP Goals (Week 8)
-- [ ] Functional to-do list app
-- [ ] All high-priority features working
-- [ ] Tests passing
-- [ ] Ready for beta users
-- [ ] Team proud of the work!
+### Week 3 Goals (Feature Complete!)
+- [ ] All core features working
+- [ ] Delete and complete tasks working
+- [ ] App is stable (no crashes)
+- [ ] Bug list created and prioritized
+- [ ] Ready for finalization
+
+### Week 4 Goals (Polish & Present!)
+- [ ] Critical bugs fixed
+- [ ] UI polished and consistent
+- [ ] Empty states added
+- [ ] Presentation materials ready
+- [ ] Demo tested multiple times
+- [ ] Team confident and ready
+
+### MVP Success Criteria (End of Week 3)
+- [ ] User can add tasks
+- [ ] User can view all tasks
+- [ ] User can edit tasks
+- [ ] User can mark tasks complete
+- [ ] User can delete tasks
+- [ ] Tasks persist in database
+- [ ] UI is clean and functional
+- [ ] App doesn't crash
 
 ---
 

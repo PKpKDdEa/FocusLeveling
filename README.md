@@ -29,24 +29,46 @@ This is an open-sourced project from HKU CS team for "Focus Leveling: Study & Co
 
 We've created comprehensive documentation for developing an MVP Android To-Do List app:
 
-📚 **Documentation Files:**
-- **[QUICK_START.md](./QUICK_START.md)** - Start here! Quick guide to get your team up and running
-- **[ISSUES_SUMMARY.md](./ISSUES_SUMMARY.md)** - Overview of all 30 issues with sprint plans
+### 🚀 **NEW: Revised 4-Week Timeline (3 weeks MVP + 1 week finalization)**
+
+**📖 START HERE:** [DOCUMENTATION_GUIDE.md](./DOCUMENTATION_GUIDE.md) - Navigation guide for all documentation
+
+📚 **Essential Documentation (4-Week Timeline):**
+- **[PROJECT_PLAN.md](./PROJECT_PLAN.md)** - ⭐ Complete 4-week strategy and plan
+- **[QUICK_REFERENCE.md](./QUICK_REFERENCE.md)** - One-page summary for daily reference
+- **[TIMELINE_VISUAL.md](./TIMELINE_VISUAL.md)** - Visual timeline with ASCII art
+- **[WEEK_BY_WEEK_SCHEDULE.md](./WEEK_BY_WEEK_SCHEDULE.md)** - Detailed daily schedule for all 4 weeks
+- **[TEAM_KICKOFF_CHECKLIST.md](./TEAM_KICKOFF_CHECKLIST.md)** - Kickoff meeting checklist and setup guide
+
+📚 **Reference Documentation (Original 8-Week Timeline):**
+- **[QUICK_START.md](./QUICK_START.md)** - Original quick guide (8-week timeline)
+- **[ISSUES_SUMMARY.md](./ISSUES_SUMMARY.md)** - Overview of all 30 issues (8-week plan)
 - **[MVP_TODO_APP_ISSUES.md](./MVP_TODO_APP_ISSUES.md)** - Detailed issue descriptions with acceptance criteria
 - **[GITHUB_ISSUE_TEMPLATES.md](./GITHUB_ISSUE_TEMPLATES.md)** - Templates for creating GitHub issues
 
 👥 **Team Structure:**
-- **UI/UX Designer** - 7 issues, ~18-20 days
-- **Backend Developer** - 8 issues, ~16-18 days  
-- **Integration Engineer** - 15 issues, ~32-35 days
+- **UI/UX Designer** - Focus on simplified designs, Material Design defaults
+- **Backend Developer** - Core data layer with Room database
+- **Integration Engineer** - MVVM implementation and feature integration
 
-📅 **Timeline:** 8 weeks (4 sprints) to MVP release
+📅 **Revised Timeline:** 4 weeks total
+- **Weeks 1-3:** MVP Development (Core CRUD features)
+- **Week 4:** Finalization & Presentation Preparation
+
+🎯 **MVP Core Features:**
+- Add, view, edit, delete tasks
+- Mark tasks as complete
+- Local persistence with Room database
+- Clean Material Design UI
+- Stable, demo-ready app
 
 🚀 **Next Steps:**
-1. Read [QUICK_START.md](./QUICK_START.md) for setup instructions
-2. Review [ISSUES_SUMMARY.md](./ISSUES_SUMMARY.md) for sprint planning
-3. Create GitHub issues from templates
-4. Begin Sprint 1 development
+1. Read **[DOCUMENTATION_GUIDE.md](./DOCUMENTATION_GUIDE.md)** to understand all documentation
+2. Read **[PROJECT_PLAN.md](./PROJECT_PLAN.md)** for the complete 4-week strategy
+3. Review **[QUICK_REFERENCE.md](./QUICK_REFERENCE.md)** for quick overview
+4. Review **[WEEK_BY_WEEK_SCHEDULE.md](./WEEK_BY_WEEK_SCHEDULE.md)** for daily tasks
+5. Hold team kickoff meeting using **[TEAM_KICKOFF_CHECKLIST.md](./TEAM_KICKOFF_CHECKLIST.md)**
+6. Begin Week 1 development
 
 ## Getting Started
 1. Clone the repository: `git clone https://github.com/yourusername/FocusLeveling.git`
