@@ -1,4 +1,4 @@
-package com.example.focusleveling
+package com.group14.focusleveling
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
