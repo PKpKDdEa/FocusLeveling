@@ -1,4 +1,4 @@
-package com.group14.focusleveling
+package COMP3330.focusleveling
 
 import org.junit.Test
 

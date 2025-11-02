@@ -1,4 +1,4 @@
-package com.group14.focusleveling
+package COMP3330.focusleveling
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.focusleveling", appContext.packageName)
+        assertEquals("COMP3330.focusleveling", appContext.packageName)
     }
 }

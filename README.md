@@ -1,88 +1,42 @@
-# Focus Leveling: Study & Conquer
+# FocusLeveling
 
-## Project Overview
-This is an open-sourced project from HKU CS team for "Focus Leveling: Study & Conquer," an RPG-style time logging app designed for students. The app encourages post-task logging to help users reflect on their actual accomplishments, reducing stress and boosting motivation.
-
-## Team Members
-- Bosco
-- Luis
-- John
+FocusLeveling is a to-do list and time management app for Android designed to help users prioritize tasks and enhance productivity. The app intelligently suggests tasks based on their priority and the user's available time, and it features an integrated timer to facilitate focused work sessions. Completed tasks are logged in a calendar view, providing a clear and motivating visual record of your progress.
 
 ## Features
-- **Task Logging**: Log preset or custom tasks with attributes like deadline, difficulty, and estimated time.
-- **XP & Levels**: Earn XP and level up your character upon task completion.
-- **Health Bar**: Tasks consume health; low health prompts break suggestions.
-- **Goals**: Set daily, weekly, and long-term goals with rewards.
-- **Achievements & Streaks**: Earn badges like "Midnight Grinder" or "Work-Life Balancer".
-- **Analytics Dashboard**: Visual reports and data-driven suggestions.
-- **Boss & Mini-Boss System**: Mini-bosses for procrastination, bosses for long-term goals.
-- **World Progression**: Unlock new areas as you progress.
 
-## Technologies
-- **Primary Platform**: Android Studio
-- **Backend**: Firebase
-- **UI/UX Design**: Figma
-- **Version Control**: GitHub
-- **Optional Tools**: Python/R for dashboard visualizations
+- **Task Management:** Create, edit, and delete tasks with detailed attributes including title, duration, and priority.
+- **Smart Task Suggestions:** The app recommends tasks to work on based on priority and the time you have available.
+- **Integrated Timer:** A built-in timer helps you stay focused during work sessions and tracks your time on each task.
+- **Progress Calendar:** A calendar view that displays your completed tasks, helping you track your accomplishments over time.
+- **Data Persistence:** Tasks are saved in a local Room database, ensuring your data is always available.
 
-## MVP Development Documentation
+## Tech Stack
 
-We've created comprehensive documentation for developing an MVP Android To-Do List app:
+- **UI:** Jetpack Compose for a modern, declarative UI.
+- **Architecture:** MVVM (Model-View-ViewModel) for a clean and scalable architecture.
+- **Asynchronous Programming:** Kotlin Coroutines and Flow for managing background threads and handling data streams.
+- **Database:** Room for robust and efficient local data storage.
+- **Dependency Injection:** Hilt for managing dependencies and simplifying the app's structure.
+- **Navigation:** Jetpack Navigation for Compose to handle in-app navigation.
+- **Language:** 100% Kotlin.
 
-### 🚀 **NEW: Revised 4-Week Timeline (3 weeks MVP + 1 week finalization)**
+## Project Structure
 
-**📖 START HERE:** [DOCUMENTATION_GUIDE.md](./DOCUMENTATION_GUIDE.md) - Navigation guide for all documentation
+- `app/src/main/java/comp3330/focusleveling/`: Main package root.
+- `data/`: Contains the data layer components, including the Room database, DAO, and repository.
+    - `AppDatabase.kt`: The Room database definition.
+    - `Task.kt`: The data model and Room entity for a task.
+    - `TaskDao.kt`: Data Access Object for performing database operations on tasks.
+    - `TaskRepository.kt`: Repository that abstracts data access from the rest of the app.
+- `ui/`: Contains UI-related classes, including Composable screens and ViewModels.
+    - `screens/`: Composable functions for each screen of the app (e.g., `HomeScreen`, `AddTaskScreen`).
+    - `AppNavHost.kt`: Manages navigation between the different screens.
+    - `TaskViewModel.kt`: The ViewModel responsible for holding and processing UI-related data.
+- `FocusLevelingApplication.kt`: The application class, used for initializing the database and repository.
 
-📚 **Essential Documentation (4-Week Timeline):**
-- **[PROJECT_PLAN.md](./PROJECT_PLAN.md)** - ⭐ Complete 4-week strategy and plan
-- **[QUICK_REFERENCE.md](./QUICK_REFERENCE.md)** - One-page summary for daily reference
-- **[TIMELINE_VISUAL.md](./TIMELINE_VISUAL.md)** - Visual timeline with ASCII art
-- **[WEEK_BY_WEEK_SCHEDULE.md](./WEEK_BY_WEEK_SCHEDULE.md)** - Detailed daily schedule for all 4 weeks
-- **[TEAM_KICKOFF_CHECKLIST.md](./TEAM_KICKOFF_CHECKLIST.md)** - Kickoff meeting checklist and setup guide
+## Setup
 
-📚 **Reference Documentation (Original 8-Week Timeline):**
-- **[QUICK_START.md](./QUICK_START.md)** - Original quick guide (8-week timeline)
-- **[ISSUES_SUMMARY.md](./ISSUES_SUMMARY.md)** - Overview of all 30 issues (8-week plan)
-- **[MVP_TODO_APP_ISSUES.md](./MVP_TODO_APP_ISSUES.md)** - Detailed issue descriptions with acceptance criteria
-- **[GITHUB_ISSUE_TEMPLATES.md](./GITHUB_ISSUE_TEMPLATES.md)** - Templates for creating GitHub issues
-
-👥 **Team Structure:**
-- **UI/UX Designer** - Focus on simplified designs, Material Design defaults
-- **Backend Developer** - Core data layer with Room database
-- **Integration Engineer** - MVVM implementation and feature integration
-
-📅 **Revised Timeline:** 4 weeks total
-- **Weeks 1-3:** MVP Development (Core CRUD features)
-- **Week 4:** Finalization & Presentation Preparation
-
-🎯 **MVP Core Features:**
-- Add, view, edit, delete tasks
-- Mark tasks as complete
-- Local persistence with Room database
-- Clean Material Design UI
-- Stable, demo-ready app
-
-🚀 **Next Steps:**
-1. Read **[DOCUMENTATION_GUIDE.md](./DOCUMENTATION_GUIDE.md)** to understand all documentation
-2. Read **[PROJECT_PLAN.md](./PROJECT_PLAN.md)** for the complete 4-week strategy
-3. Review **[QUICK_REFERENCE.md](./QUICK_REFERENCE.md)** for quick overview
-4. Review **[WEEK_BY_WEEK_SCHEDULE.md](./WEEK_BY_WEEK_SCHEDULE.md)** for daily tasks
-5. Hold team kickoff meeting using **[TEAM_KICKOFF_CHECKLIST.md](./TEAM_KICKOFF_CHECKLIST.md)**
-6. Begin Week 1 development
-
-## Getting Started
-1. Clone the repository: `git clone https://github.com/yourusername/FocusLeveling.git`
-2. Open in Android Studio and set up Firebase.
-3. Install dependencies and start development.
-4. For MVP development, see the documentation files above.
-
-## References
-- [Habitica](https://habitica.com)
-- [Athenify](https://athenify.io)
-- [Forest](https://forestapp.cc)
-- [Focus Friend](https://theverge.com)
-
-## Contribution Guidelines
-- Use branches for specific features (e.g., `ui-design`, `core-logic`).
-- Commit regularly with clear messages.
-- Follow the division of labor: Fok (UI/UX), Ng (gamification), Leung (backend/analytics).
+1.  Clone this repository.
+2.  Open the project in Android Studio.
+3.  Allow Android Studio to download the necessary Gradle dependencies.
+4.  Build and run the app on an Android emulator or a physical device.
