@@ -1,4 +1,4 @@
-package com.comp3330.focusleveling.model
+package comp3330.focusleveling.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

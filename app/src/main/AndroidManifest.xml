@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
-        android:name="com.comp3330.focusleveling.FocusLevelingApplication"
+        android:name="comp3330.focusleveling.FocusLevelingApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FocusLeveling">
         <activity
-            android:name="com.comp3330.focusleveling.MainActivity"
+            android:name="comp3330.focusleveling.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

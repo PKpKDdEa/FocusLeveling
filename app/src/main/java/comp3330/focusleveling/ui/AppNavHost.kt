@@ -8,7 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.comp3330.focusleveling.FocusLevelingApplication
+import comp3330.focusleveling.FocusLevelingApplication
 import com.comp3330.focusleveling.ui.screens.AddTaskScreen
 import com.comp3330.focusleveling.ui.screens.CalendarScreen
 import com.comp3330.focusleveling.ui.screens.EditTaskScreen

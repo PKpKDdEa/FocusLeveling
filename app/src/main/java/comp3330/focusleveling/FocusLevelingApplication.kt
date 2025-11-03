@@ -1,8 +1,8 @@
-package com.comp3330.focusleveling
+package comp3330.focusleveling
 
 import android.app.Application
-import com.comp3330.focusleveling.data.AppDatabase
-import com.comp3330.focusleveling.data.TaskRepository
+import comp3330.focusleveling.data.AppDatabase
+import comp3330.focusleveling.data.TaskRepository
 
 class FocusLevelingApplication : Application() {
     val database by lazy { AppDatabase.getDatabase(this) }

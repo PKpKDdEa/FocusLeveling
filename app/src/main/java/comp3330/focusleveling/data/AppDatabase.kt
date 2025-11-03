@@ -1,10 +1,10 @@
-package com.comp3330.focusleveling.data
+package comp3330.focusleveling.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.comp3330.focusleveling.model.Task
+import comp3330.focusleveling.model.Task
 
 @Database(entities = [Task::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {

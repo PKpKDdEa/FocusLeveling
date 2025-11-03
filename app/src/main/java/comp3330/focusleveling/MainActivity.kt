@@ -1,4 +1,4 @@
-package com.comp3330.focusleveling
+package comp3330.focusleveling
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

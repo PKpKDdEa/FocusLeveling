@@ -2,8 +2,8 @@ package com.comp3330.focusleveling.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.comp3330.focusleveling.data.TaskRepository
-import com.comp3330.focusleveling.model.Task
+import comp3330.focusleveling.data.TaskRepository
+import comp3330.focusleveling.model.Task
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn

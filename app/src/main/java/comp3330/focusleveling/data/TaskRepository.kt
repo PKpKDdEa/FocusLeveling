@@ -1,6 +1,6 @@
-package com.comp3330.focusleveling.data
+package comp3330.focusleveling.data
 
-import com.comp3330.focusleveling.model.Task
+import comp3330.focusleveling.model.Task
 import kotlinx.coroutines.flow.Flow
 
 class TaskRepository(private val taskDao: TaskDao) {
